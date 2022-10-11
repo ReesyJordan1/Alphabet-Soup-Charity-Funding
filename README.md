@@ -4,7 +4,7 @@
 
 In this project, I am working on building a deep learning binary classifier to help Alphabet Soup Charity to decide whether an applicant is a good candidate for funding or not.
 
-![intrp.jpg](images/intro.jpg)
+![intrp.jpg](intro.jpg)
 
 The data provided by the charit contains historical data about ~ 34K applicant who received funds and whether they were successful or not. Employing this data, we train our deep learning classifier. The steps implemented are as follows
 <ol>
@@ -39,7 +39,7 @@ In this section we discuss the results found during conducting our analysis. As 
 ### Trial 0
 
 We firstly trained a model with these settings:
-![initial.png](images/initial.png)
+![initial.png](initial.png)
 Activation is Relu per all layers and Sigmoid at the output layer. Moreover, model is trained for 20 epochs.
 
 That model achieved 65 % test accuracy. Afterwards, we modifeied the model architecture to push this performance above.
@@ -51,33 +51,33 @@ We trained the same model using same architecture, but we dropped the noisy feat
 ### Trial 2
 
 To increase the model performance, we added a hidden layer. so the architecture becomes as follows:
-![trial2.png](images/trial2.png)
+![trial2.png](trial2.png)
 The performance is increased to become 72%
 
 
 
 ### Trial 3
 In this trial we changed the number of units per each layer. So, the architecture becomes as follows
-![trial3.png](images/trial3.png)
+![trial3.png](trial3.png)
 However, that didn't improve performance as it achieved only 65%
 
 ### Trial 4
 
 Using the following architecture, and `tanh` as an activation for the output layer, we conducted our fourth trial. 
-![trial4.png](images/trial4.png)
+![trial4.png](trial4.png)
 
 However, we only achieved 62% accuracy.
 
 ### Trial 5
 
 We used the following architecture, but `sigmoid` activation per all layers.
-![trial5.png](images/trial5.png)
+![trial5.png](trial5.png)
 
 And we achieved 69% test accuracy
 
 ###  Trial 6
 Since trial 5 architecture achieved the best results so far, we trained a model using the same architecture but for longer time by increasing the number of epochs to 50 instead of 20.
-![trial6.png](images/trial6.png)
+![trial6.png](trial6.png)
 However, the performance didn't improve as expected and we only achieved 65%.
 
 
